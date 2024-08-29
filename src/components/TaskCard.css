@@ -1,0 +1,78 @@
+.task_card{
+    width: 100%;
+    min-height: 6.25rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: grab;
+}
+
+.task_card:active{
+    opacity: 0.7;
+    border: 1px solid #111;
+}
+
+.task_text{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.task_card_bottom_line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_delete{
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.task_delete:hover{
+    background-color: #ebebeb;
+}
+
+.delete_icon{
+    width: 1.25rem;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.task_delete:hover .delete_icon{
+    opacity: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .task_card {
+        padding: 0.75rem; /* Reduce padding for mobile */
+        margin: 0.75rem 0; /* Adjust margins for mobile */
+        min-height: 5.5rem; /* Reduce height slightly for mobile */
+    }
+
+    .task_text {
+        font-size: 1rem; /* Slightly smaller font for mobile */
+        margin-bottom: 0.75rem; /* Adjust margin for better spacing */
+    }
+
+    .task_card_bottom_line {
+        flex-direction: row; /* Stack content vertically on mobile */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .task_delete {
+        width: 2rem; /* Slightly smaller delete button for mobile */
+        height: 2rem;
+    }
+
+    .delete_icon {
+        width: 1rem; /* Slightly smaller icon for mobile */
+    }
+}

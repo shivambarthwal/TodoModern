@@ -1,0 +1,32 @@
+.app{
+    display: grid;
+    grid-template-rows: 9rem;
+}
+
+.app_main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 8%;
+}
+
+.task_column{
+    width: 33.33%;
+    margin: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .app {
+        grid-template-rows: auto; /* Adjust row heights for smaller screens */
+    }
+
+    .app_main {
+        flex-direction: column; /* Stack task columns vertically */
+        padding: 1rem 2%; /* Reduce padding for mobile screens */
+        justify-content: flex-start; /* Align items to the top */
+    }
+
+    .task_column {
+        width: 100%; /* Full width for each task column */
+        margin: 1rem 0; /* Adjust margins for spacing */
+    }
+}

@@ -1,0 +1,36 @@
+.balls-container {
+  position: fixed; /* Covers the entire viewport */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  z-index: -1;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  filter: blur(4px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #2fe647;
+  position: absolute; /* Allows free movement across the screen */
+  animation: changeColor 5s infinite alternate; /* Animation applied */
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #2fe647; /* Starting color */
+  }
+  25% {
+    background-color: #42a5f5; /* Color at 25% of the duration */
+  }
+  50% {
+    background-color: #f44336; /* Color at 50% of the duration */
+  }
+  75% {
+    background-color: #ffa726; /* Color at 75% of the duration */
+  }
+  100% {
+    background-color: #ab47bc; /* Ending color */
+  }
+}

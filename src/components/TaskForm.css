@@ -1,0 +1,88 @@
+.app_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.app_header > form{
+    width: 40%;
+}
+
+.task_input{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: #f9f9f9;
+    color: #000;
+    border: 1px solid #dfe3e6;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.task_input::placeholder{
+    color: #686868  ;
+}
+
+.task_form_bottom_line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.task_status{
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    width: 7.5rem;
+    height: 2.5rem;
+    padding: 0 0.25rem;
+}
+
+.task_submit{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #6457f9;
+    color: #fff;
+    border-radius: 20rem;
+    height: 2.5rem;
+    padding: 0.25rem 0.75rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.task_submit:hover{
+    background-color: #362adf;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    .app_header {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        padding: 1rem;
+    }
+
+    .app_header > form {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .task_form_bottom_line {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Ensure elements take full width */
+    }
+
+    .task_status {
+        width: 100%; /* Full width for easier selection */
+        margin-bottom: 0.5rem; /* Adjust margin for better spacing */
+    }
+
+    .task_submit {
+        width: 100%; /* Full width for better tap targets */
+        margin-left: 0; /* Remove left margin */
+    }
+}

@@ -1,0 +1,18 @@
+.tag{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    border: 1px solid #dfe3e6;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .tag {
+        font-size: 0.875rem; /* Slightly smaller font size for mobile */
+        padding: 0.2rem 0.4rem; /* Adjusted padding for better fit */
+        margin-right: 0.4rem; /* Reduced margin for tighter spacing */
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,0 +1,23 @@
+
+.task_column_heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.task_column_icon{
+    width: 2rem;
+    margin-right: 0.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .task_column_heading {
+        flex-direction: row; /* Maintain row direction, but adjust spacing */
+        align-items: center;
+    }
+
+    .task_column_icon {
+        width: 1.5rem; /* Slightly reduce the icon size for mobile */
+        margin-right: 0.5rem; /* Increase margin for better spacing on small screens */
+    }
+}
